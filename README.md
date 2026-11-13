@@ -47,3 +47,13 @@ Rscript scripts/test_loci.R
 | `RNA_1h_culture_cluster_values.tsv` | `263d91ffd8a8ef585640976b4a38ccc6a03721782835c7968fa9425ac8d1174f` |
 | `RNA_1h_paired_wilcoxon_tests.tsv` | `dfe7fd6a65728b3c70c66a527240a9c06207d2be9d2f96ed0ef6597467eb14d2` |
 | `TE_age15_counts_and_percent.tsv` | `c7c6ca7855a598c0ac694d480f54f50e156132b4be458ca6a58bf83d26d0dcb3` |
+
+## Reconstructing connector-sized data files
+
+To keep repository objects practical while preserving the original values exactly, each large locus JavaScript file is split into ordered `data/loci/<gene>.partNN.js` scripts. The page assembles the six locus objects in memory before rendering. The condition-loop gzip archive is stored as base64 scripts in `data/downloads/condition_specific_loops.partNN.js`; its download link reconstructs the original gzip byte-for-byte in the browser. No external service is contacted. For offline verification or reuse, run:
+
+```sh
+node scripts/reassemble_data.js /path/to/output
+```
+
+The helper checks SHA-256 checksums against `data/chunk_manifest.json` and writes the original locus scripts and loop archive to that output directory. The verification scripts reconstruct these files into a temporary directory automatically. The original local research workspace retains its unchanged unchunked sources.

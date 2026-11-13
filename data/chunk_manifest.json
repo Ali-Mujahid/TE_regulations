@@ -1,0 +1,40 @@
+{
+  "loci": {
+    "Klf6": {
+      "original_sha256": "be724f66454b5cf2abf99b0c2f8cadfb285eb66c7e1ec948a24be59c2f02d15d",
+      "json_sha256": "7ac5dba97e2d054bf8a3f680d587774d1cbc7350f498dd93f2ecb125a9045aeb",
+      "chunks": 6
+    },
+    "Fndc9": {
+      "original_sha256": "93bd3830acd2d3c52e52d93a31aafb75111108635e63d9a7543cb830a9896de3",
+      "json_sha256": "32e8f1ea3f7acfb5ae8477445f517eaedb3e9268bdf2e02724344ded835690a2",
+      "chunks": 5
+    },
+    "Rgs4": {
+      "original_sha256": "8524286efb3bc9de952241bc5613cad8853bb67b50b13f6272f19a7c8f601e95",
+      "json_sha256": "898e236c68e59ef5b105120361581e82e017a6ffe9f5adc553c8043488f5ced3",
+      "chunks": 5
+    },
+    "Rasl11b": {
+      "original_sha256": "fb5c8964eec1f280f5a24aacbd653f5b121ad0c821fb307bb3815c728b6a1010",
+      "json_sha256": "2efee15e440d80cf6b03ca5526ea90c5adf41222c7ba32be6b861f3dfcd17aeb",
+      "chunks": 6
+    },
+    "Btg2": {
+      "original_sha256": "2a9827f94a678c92d332f25722ae6e43f269af919ac284f480aed32406918118",
+      "json_sha256": "c63b8f0554cd1696ece8b95808c5182d8ac92fcd1cde4a30524588fd01f77caf",
+      "chunks": 5
+    },
+    "Ascl1": {
+      "original_sha256": "9e2c8d3244972be0dcd8c856bc3e5cc633e3141684fd70688c3f0128b51f82de",
+      "json_sha256": "ae987427d381ac45001827937b98c119c8306b2ad5273b05007c27883abab0cf",
+      "chunks": 5
+    }
+  },
+  "archive": {
+    "name": "condition_specific_loops.tsv.gz",
+    "bytes": 1791059,
+    "sha256": "67abc22f48e10e68608742675581e583f395129fb306d1fdbf3270600a929d95",
+    "chunks": 5
+  }
+}
